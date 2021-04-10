@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+
+    color: white;
+    font-family: sans-serif;
+
+    width: 100%;
+    padding: 0 4rem;
+
+    position: fixed;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#navigation_links {
+    align-self: center;
+    position: relative;
+}
+
+#navigation_links a {
+    color: white;
+    font-size: 1rem;
+    padding: .5rem;
+
+    text-decoration: none;
+}
+
+#navigation_links a::before {
+    content: '';
+    position: absolute;
+
+    top: 20px; 
+
+    height: 2px;
+    width: 0;
+    border-radius: 30px;
+
+    background-color: white;
+}
+
+#navigation_links a:hover::before {
+    width: 20px;
+}
+
+section {
+    height: 100vh;
+}
+
+#table,
+#roster,
+footer {
+    background-color: black;
+    color: white;
+}
+
+#fixtures,
+#stats {
+    background-color: white;
+}
+
+
+
+/* Table section */
+#table {
+    display: grid;
+
+    grid-template-columns: 30vw auto;
+    place-items: center;
+}
+
+.sidebar p {
+    margin: 0;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+
+/* Fixtures section */
+#fixtures {}
+
+/* Stats section */
+#stats {}
+
+/* Roster section  */
+#roster {}
+
+
+
+/* Footer */
+footer {
+    text-align: right;
+    margin: 0;
+    padding: .1rem;
+
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+
+    font-family: sans-serif;
+}
+
+footer p {
+    padding-right: 4rem;
+}
