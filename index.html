@@ -27,21 +27,29 @@
         </div>
     </nav>
     <section id="table">
+        <div class="overlay"></div>
         <div class="sidebar">
-            <!-- <p>Gameweek 1</p>
-            <p>Gameweek 2</p>
-            <p>Gameweek 3</p>
-            <p>Gameweek 4</p>
-            <p>Gameweek 5</p>
-            <p>Gameweek 6</p>
-            <p>Gameweek 7</p>
-            <p>Gameweek 8</p>
-            <p>Gameweek 9</p> -->
         </div>
     </section>
     <section id="fixtures"></section>
     <section id="roster"></section>
     <section id="stats"></section>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 100) {
+                    $("nav").css("background", "black");
+                } else {
+                    $("nav").css("background", "transparent");
+                }
+            })
+        })
+    </script>
 </body>
 <footer>
     <p>&copy DL Cup Productions 2021</p>
