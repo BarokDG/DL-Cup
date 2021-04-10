@@ -10,11 +10,21 @@ body {
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(77, 83, 86);
+    border-radius: 30px;
+}
+
 /* Nav */
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: transparent;
 
     color: white;
     font-family: sans-serif;
@@ -63,7 +73,12 @@ section {
     height: 100vh;
 }
 
-#table,
+#table {
+    background-image: url("../images/Fluorescent\ Foil\ 14\ -\ 16x9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #roster,
 footer {
     background-color: black;
