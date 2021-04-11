@@ -10,6 +10,9 @@ body {
     margin: 0;
 }
 
+
+
+
 ::-webkit-scrollbar {
     background-color: #202324;
 }
@@ -19,9 +22,12 @@ body {
     border-radius: 30px;
 }
 
+
+
 /* Nav */
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: transparent;
 
@@ -32,7 +38,7 @@ nav {
     padding: 0 4rem;
 
     position: fixed;
-    z-index: 3;
+    z-index: 4;
 }
 
 h1 {
@@ -56,7 +62,7 @@ h1 {
     content: '';
     position: absolute;
 
-    top: 20px; 
+    top: 20px;
 
     height: 2px;
     width: 0;
@@ -69,11 +75,15 @@ h1 {
     width: 20px;
 }
 
+
+
+/* General Styles for sections*/
+
 section {
     height: 100vh;
 }
 
-#table {
+#table-container {
     background-image: url("../images/Fluorescent\ Foil\ 14\ -\ 16x9.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,10 +103,10 @@ footer {
 
 
 /* Table section */
-#table {
+
+#table-container {
     display: grid;
 
-    grid-template-columns: 30vw auto;
     place-items: center;
 }
 
@@ -108,6 +118,142 @@ footer {
     background: linear-gradient(to right, rgba(33, 33, 33, 0.3), rgba(33, 33, 33, 0.3));
     z-index: 2;
 }
+
+
+.vertical-text {
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    color: white;
+
+    transform: rotate(-90deg);
+
+    position: absolute;
+    left: -4vw;
+    bottom: 30vh;
+}
+
+
+table {
+    width: 80vw;
+    height: 70vh;
+    font-family: sans-serif;
+
+    border-collapse: collapse;
+
+    position: relative;
+    left: 2vw;
+    z-index: 3;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+:is(thead th, tbody td):nth-child(1) {
+    width: 30vw;
+    padding-left: 5rem;
+    text-align: left;
+}
+
+:is(thead th, tbody td):nth-child(2) {
+    width: 20vw;
+}
+
+thead th {
+    padding: .5rem;
+}
+
+tbody {
+    background-color: white;
+    text-align: center;
+}
+
+/* Rankings */
+
+td::before {
+    position: absolute;
+    left: 2rem;
+}
+
+tbody tr {
+    margin-top: 1rem;
+}
+
+/* tbody tr:nth-child(1)::before{
+    content: '';
+    background-color: slateblue;
+
+    width: .5%;
+    height: 10%;
+
+    position: absolute;
+    left: 0;
+} */
+
+tr:nth-child(1) td:nth-child(1)::before {
+    content: '1';
+}
+
+tr:nth-child(2) td:nth-child(1)::before {
+    content: '2';
+}
+
+tr:nth-child(3) td:nth-child(1)::before {
+    content: '3';
+}
+
+tr:nth-child(4) td:nth-child(1)::before {
+    content: '4';
+}
+
+tr:nth-child(5) td:nth-child(1)::before {
+    content: '5';
+}
+
+tr:nth-child(6) td:nth-child(1)::before {
+    content: '6';
+}
+
+tr:nth-child(7) td:nth-child(1)::before {
+    content: '7';
+}
+
+tr:nth-child(8) td:nth-child(1)::before {
+    content: '8';
+}
+
+tr:nth-child(9) td:nth-child(1)::before {
+    content: '9';
+}
+
+tr:nth-child(10) td:nth-child(1)::before {
+    content: '10';
+}
+
+
+/* Font awesome icon styles */
+.fas {
+    font-size: 1.5rem;
+}
+
+.fa-check-circle {
+    color: lime;
+}
+
+.fa-times-circle {
+    color: crimson;
+}
+
+.fa-minus-circle {
+    color: slategray;
+}
+
+
+
+
+
+
 
 /* Fixtures section */
 #fixtures {}
