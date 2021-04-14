@@ -4,7 +4,6 @@
 
 html {
     scroll-behavior: smooth;
-    min-width: 320px;
 }
 
 body {
@@ -41,7 +40,7 @@ nav {
     font-family: sans-serif;
 
     width: 100%;
-    padding: 0 4rem;
+    padding: 0 7%;
 
     position: fixed;
     z-index: 4;
@@ -128,9 +127,9 @@ footer {
 /* Table section */
 
 #table_container {
-    /* display: grid;
+    display: grid;
 
-    place-items: center; */
+    place-items: center;
 }
 
 .vertical-text {
@@ -155,7 +154,6 @@ table {
 
     position: relative;
 
-    top: 5vh;
     z-index: 3;
 
     overflow-x: scroll;
@@ -365,6 +363,6 @@ footer {
 }
 
 footer p {
-    padding-right: 4rem;
+    padding-right: 7%;
     margin-top: 1rem !important;
 }
