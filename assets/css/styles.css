@@ -157,7 +157,7 @@ table {
     z-index: 3;
 
     overflow-x: scroll;
-    max-width: 100%;
+    width: 100%;
 }
 
 abbr {
@@ -172,13 +172,11 @@ thead {
 }
 
 :is(thead th, tbody td):nth-child(1) {
-    width: 30vw;
     padding-left: 5rem;
     text-align: left;
 }
 
 :is(thead th, tbody td):nth-child(2) {
-    width: 20vw;
     white-space: nowrap;
 }
 
@@ -269,15 +267,15 @@ tr:nth-child(10) td:nth-child(1)::before {
 }
 
 .fa-check-circle {
-    color: hsl(120, 100%, 80%);
+    color: hsl(120, 100%, 60%);
 }
 
 .fa-times-circle {
-    color: hsl(328, 100%, 80%);
+    color: hsl(320, 100%, 55%);
 }
 
 .fa-minus-circle {
-    color: hsl(249, 4%, 80%);
+    color: hsl(249, 10%, 80%);
 }
 
 /* Table responsiveness */
