@@ -245,7 +245,6 @@ tr:nth-child(10) td:nth-child(1)::before {
 @media screen and (max-width: 700px) {
     table {
         display: block;
-        /* top: 100px; */
     }
 
     thead th:nth-child(1),
@@ -261,7 +260,7 @@ tr:nth-child(10) td:nth-child(1)::before {
     }
 
     nav{
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     nav > h1 {
@@ -284,9 +283,9 @@ tr:nth-child(10) td:nth-child(1)::before {
 }
 
 /* Footer */
-footer, nav > h1:nth-child(1){
+footer, nav > h1{
     letter-spacing: 5px;
-    font-weight: 100;
+    font-weight: lighter;
 }
 
 
