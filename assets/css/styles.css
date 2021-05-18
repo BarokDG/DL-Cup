@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto/Roboto-Thin.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'montserrat-regular';
+    src: url('../fonts/Montserrat/Montserrat-Regular.otf');
+}
 * {
     box-sizing: border-box !important;
 }
@@ -51,7 +67,12 @@ nav {
     background-color: var(--secondary-color);
 }
 
+nav > h1, footer {
+    font-family: roboto;
+}
+
 h1 {
+    font-family: montserrat;
     font-size: 2rem;
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
@@ -86,7 +107,7 @@ section {
 /* Table section */
 table {
     border-collapse: collapse;
-    font-family: sans-serif;
+    font-family: montserrat-regular;
     overflow-x: auto;
     position: relative;
     width: 100%;
@@ -265,7 +286,7 @@ tr:nth-child(10) td:nth-child(1)::before {
     }
 
     nav{
-        justify-content: flex-end;
+        justify-content: center;
     }
     
     nav > a {
