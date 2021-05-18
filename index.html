@@ -29,14 +29,14 @@
                 <tr>
                     <th></th>
                     <th>Form</th>
-                    <th>Played</th>
-                    <th>Won</th>
-                    <th>Drawn</th>
-                    <th>Lost</th>
+                    <th id="Pl" title="Games Played">Pl</th>
+                    <th id="W" title="Won">W</th>
+                    <th id="D" title="Drawn">D</th>
+                    <th id="L" title="Lost">L</th>
                     <th><abbr title="Goals for">GF</abbr></th>
                     <th><abbr title="Goals against">GA</abbr></th>
                     <th><abbr title="Goal Difference">GD</abbr></th>
-                    <th>Points</th>
+                    <th id="Pts" title="Total Points">Pts</th>
                 </tr>
             </thead>
             <tbody>
@@ -186,7 +186,7 @@
         $(document).ready(function () {
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
-                if (scroll > 50) {
+                if (scroll > 30) {
                     $('nav').removeClass('nav_transparent_color');
                     $('nav').addClass('nav_solid_color');
                 } else {
@@ -197,28 +197,28 @@
 
             function toggle_team_names() {
 
-                document.querySelector("#IT span").innerHTML = 'IT';
+                $("#IT span").html('IT');
 
-                if (screen.width <= 500) {
-                    document.querySelector("#Bio span").innerHTML = 'Bio';
-                    document.querySelector("#Che span").innerHTML = 'Che';
-                    document.querySelector("#Civ span").innerHTML = 'Civ';
-                    document.querySelector("#ElecA span").innerHTML = 'ElecA';
-                    document.querySelector("#ElecB1 span").innerHTML = 'ElecB1';
-                    document.querySelector("#ElecB2 span").innerHTML = 'ElecB2';
-                    document.querySelector("#ElecC span").innerHTML = 'ElecC';
-                    document.querySelector("#Mech span").innerHTML = 'Mech';
-                    document.querySelector("#Soft span").innerHTML = 'Soft';
+                if (screen.width <= 1000) {
+                    $("#Bio span").html('Bio');
+                    $("#Che span").html('Che');
+                    $("#Civ span").html('Civ');
+                    $("#ElecA span").html('ElecA');
+                    $("#ElecB1 span").html('ElecB1');
+                    $("#ElecB2 span").html('ElecB2');
+                    $("#ElecC span").html('ElecC');
+                    $("#Mech span").html('Mech');
+                    $("#Soft span").html('Soft');
                 } else {
-                    document.querySelector("#Bio span").innerHTML = 'Biomed';
-                    document.querySelector("#Che span").innerHTML = 'Chemical';
-                    document.querySelector("#Civ span").innerHTML = 'Civil';
-                    document.querySelector("#ElecA span").innerHTML = 'Electrical A';
-                    document.querySelector("#ElecB1 span").innerHTML = 'Electrical B1';
-                    document.querySelector("#ElecB2 span").innerHTML = 'Electrical B2';
-                    document.querySelector("#ElecC span").innerHTML = 'Electrical C';
-                    document.querySelector("#Mech span").innerHTML = 'Mechanical';
-                    document.querySelector("#Soft span").innerHTML = 'Software';
+                    $("#Bio span").html('Biomed');
+                    $("#Che span").html('Chemical');
+                    $("#Civ span").html('Civil');
+                    $("#ElecA span").html('Electrical A');
+                    $("#ElecB1 span").html('Electrical B1');
+                    $("#ElecB2 span").html('Electrical B2');
+                    $("#ElecC span").html('Electrical C');
+                    $("#Mech span").html('Mechanical');
+                    $("#Soft span").html('Software');
                 }
 
                 setTimeout(() => {
@@ -226,7 +226,29 @@
                 }, 1000);
             }
 
+            function toggle_table_headers() {
+                if (screen.width <= 700) {
+                    $("#Pl").html('Played');
+                    $("#W").html('Won');
+                    $("#D").html('Drawn');
+                    $("#L").html('Lost');
+                    $("#Pts").html('Points');
+                }
+                else {
+                    $("#Pl").html('Pl');
+                    $("#W").html('W');
+                    $("#D").html('D');
+                    $("#L").html('L');
+                    $("#Pts").html('Pts');
+                }
+
+                setTimeout(() => {
+                    toggle_table_headers();
+                }, 1000);
+            }
+
             toggle_team_names();
+            toggle_table_headers();
         })
     </script>
 </body>

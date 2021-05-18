@@ -15,7 +15,7 @@ body {
     --secondary-color: #210B41;
     --accent-color: hsl(264, 60%, 30%);
 
-    --vertical-padding: 10vh;
+    --vertical-padding: 5rem;
     --horizontal-padding: 7%;
 
     /* --extra-padding: 30px; */
@@ -71,8 +71,6 @@ a:hover {
 
 }
 
-
-
 /* General Styles for sections*/
 
 section {
@@ -89,7 +87,7 @@ section {
 table {
     border-collapse: collapse;
     font-family: sans-serif;
-    overflow-x: scroll;
+    overflow-x: auto;
     position: relative;
     width: 100%;
     z-index: 3;
@@ -242,6 +240,12 @@ tr:nth-child(10) td:nth-child(1)::before {
 
 /* Table responsiveness */
 
+@media screen and (max-width: 1000px) {
+    :is(thead th, tbody td):nth-child(1) {
+        min-width: 175px;
+    }
+}
+
 @media screen and (max-width: 700px) {
     table {
         display: block;
@@ -251,7 +255,6 @@ tr:nth-child(10) td:nth-child(1)::before {
     tbody td:nth-child(1) {
         position: sticky;
         left: 0;
-
         background-color: var(--accent-color);
     }
 
@@ -261,10 +264,6 @@ tr:nth-child(10) td:nth-child(1)::before {
 
     nav{
         justify-content: flex-end;
-    }
-
-    nav > h1 {
-        font-weight: bold;
     }
     
     nav > a {
@@ -276,11 +275,7 @@ tr:nth-child(10) td:nth-child(1)::before {
     }
 }
 
-@media screen and (max-width: 500px) {
-    :is(thead th, tbody td):nth-child(1) {
-        min-width: 175px;
-    }
-}
+
 
 /* Footer */
 footer, nav > h1{
