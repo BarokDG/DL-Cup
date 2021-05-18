@@ -12,7 +12,7 @@ body {
 
 :root {
     --primary-color: white;
-    --secondary-color: hsl(264, 75%, 18%);
+    --secondary-color: #210B41;
     --accent-color: hsl(264, 60%, 30%);
 
     --vertical-padding: 10vh;
