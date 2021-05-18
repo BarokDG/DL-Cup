@@ -277,7 +277,7 @@ tr:nth-child(10) td:nth-child(1)::before {
 
 @media screen and (max-width: 500px) {
     :is(thead th, tbody td):nth-child(1) {
-        min-width: 170px;
+        min-width: 175px;
     }
 }
 
