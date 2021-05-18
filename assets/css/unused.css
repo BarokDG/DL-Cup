@@ -1,0 +1,94 @@
+#navigation_links {
+    position: relative;
+    align-self: center;
+}
+
+#navigation_links a {
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: .5rem;
+
+    position: relative;
+}
+
+#navigation_links a::before {
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    height: 2px;
+    width: 100%;
+
+    border-radius: 30px;
+
+    background-color: var(--primary-color);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 250ms transform ease-in;
+}
+
+#navigation_links a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/* Fixtures section */
+#fixtures {}
+
+
+/* Roster section  */
+#roster {
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(70%, 100%)); */
+}
+
+#roster .row>div {
+    /* height: 80vh; */
+}
+
+#team_roster {
+    background-color: var(--primary-color);
+}
+
+#most_recent_lineup {
+    background-color: var(--secondary-color);
+}
+
+canvas {
+    width: 100%;
+}
+
+
+
+/* Stats section */
+
+#stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    grid-gap: .5rem;
+    /* justify-content: center; */
+}
+
+#stats>div {
+    background-color: var(--secondary-color);
+    height: 400px;
+
+    transform: skewY(-10deg);
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 !important;
+}
+
+.col_title {
+    background-color: var(--primary-color);
+    font-size: 2rem;
+
+    padding-left: 1rem;
+}
