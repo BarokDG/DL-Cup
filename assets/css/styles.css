@@ -150,7 +150,7 @@ tbody {
 
 /* Rankings */
 
-td::before {
+td:before {
     position: absolute;
     left: 2rem;
 }
@@ -164,7 +164,7 @@ td:nth-child(1) {
     position: relative;
 }
 
-td::after {
+td:after {
     content: '';
     width: 2%;
     height: 100%;
@@ -174,55 +174,55 @@ td::after {
     left: 0;
 }
 
-tr:nth-child(1) td:nth-child(1)::after {
+tr:nth-child(1) td:nth-child(1):after {
     background-color: gold;
 }
 
 :is(tr:nth-child(2),
 tr:nth-child(3),
 tr:nth-child(4),
-tr:nth-child(5)) td:nth-child(1)::after {
+tr:nth-child(5)) td:nth-child(1):after {
     background-color: silver;
 }
 
 
-tr:nth-child(1) td:nth-child(1)::before {
+tr:nth-child(1) td:nth-child(1):before {
     content: '1';
 }
 
-tr:nth-child(2) td:nth-child(1)::before {
+tr:nth-child(2) td:nth-child(1):before {
     content: '2';
 }
 
-tr:nth-child(3) td:nth-child(1)::before {
+tr:nth-child(3) td:nth-child(1):before {
     content: '3';
 }
 
-tr:nth-child(4) td:nth-child(1)::before {
+tr:nth-child(4) td:nth-child(1):before {
     content: '4';
 }
 
-tr:nth-child(5) td:nth-child(1)::before {
+tr:nth-child(5) td:nth-child(1):before {
     content: '5';
 }
 
-tr:nth-child(6) td:nth-child(1)::before {
+tr:nth-child(6) td:nth-child(1):before {
     content: '6';
 }
 
-tr:nth-child(7) td:nth-child(1)::before {
+tr:nth-child(7) td:nth-child(1):before {
     content: '7';
 }
 
-tr:nth-child(8) td:nth-child(1)::before {
+tr:nth-child(8) td:nth-child(1):before {
     content: '8';
 }
 
-tr:nth-child(9) td:nth-child(1)::before {
+tr:nth-child(9) td:nth-child(1):before {
     content: '9';
 }
 
-tr:nth-child(10) td:nth-child(1)::before {
+tr:nth-child(10) td:nth-child(1):before {
     content: '10';
 }
 
