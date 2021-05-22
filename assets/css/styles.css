@@ -280,9 +280,13 @@ tr:nth-child(10) td:nth-child(1):before {
 /* Table responsiveness */
 
 @media screen and (max-width: 1000px) {
-    :is(thead th, tbody td):nth-child(1) {
+    thead th:nth-child(1), tbody td:nth-child(1){
         min-width: 175px;
     }
+
+    /* :is(thead th, tbody td):nth-child(1) {
+        min-width: 175px;
+    } */
 }
 
 @media screen and (max-width: 700px) {
@@ -293,6 +297,7 @@ tr:nth-child(10) td:nth-child(1):before {
     thead th:nth-child(1),
     tbody td:nth-child(1) {
         position: sticky;
+        top: 0;
         left: 0;
         background-color: var(--accent-color);
 
