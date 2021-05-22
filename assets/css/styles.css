@@ -88,11 +88,6 @@ a:hover {
     text-decoration: none;
 }
 
-
-@media screen and (max-width: 767.98px) {
-
-}
-
 /* General Styles for sections*/
 
 section {
@@ -296,8 +291,8 @@ tr:nth-child(10) td:nth-child(1):before {
 
     thead th:nth-child(1),
     tbody td:nth-child(1) {
+        position: -webkit-sticky;
         position: sticky;
-        top: 0;
         left: 0;
         background-color: var(--accent-color);
 
