@@ -193,7 +193,7 @@
         $(document).ready(function () {
             $(window).scroll(function () {
                 var scroll = $(window).scrollTop();
-                if (scroll > 30) {
+                if (scroll > 20) {
                     $('nav').removeClass('nav_transparent_color');
                     $('nav').addClass('nav_solid_color');
                 } else {
@@ -234,7 +234,7 @@
             }
 
             function toggle_table_headers() {
-                if (screen.width <= 700) {
+                if (screen.width >= 860) {
                     $("#Pl").html('Played');
                     $("#W").html('Won');
                     $("#D").html('Drawn');

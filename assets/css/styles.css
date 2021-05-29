@@ -121,7 +121,7 @@ thead {
 }
 
 thead th:nth-child(1), tbody td:nth-child(1) {
-    padding-left: 5rem;
+    padding-left: 4rem;
     text-align: left;
     min-width: 225px;
 }
@@ -242,7 +242,7 @@ tr:nth-child(10) td:nth-child(1):before {
 
 /* Font awesome icon styles */
 .fas {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .fa-check-circle {
@@ -285,7 +285,21 @@ tr:nth-child(10) td:nth-child(1):before {
     } */
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px){
+    nav{
+        justify-content: center;
+    }
+    
+    nav > a {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    :root {
+        --horizontal-padding: 5%;
+    }
+
     table {
         display: block;
     }
@@ -304,20 +318,20 @@ tr:nth-child(10) td:nth-child(1):before {
         box-shadow: none;
     }
 
+    section{
+        min-height: calc(100vh - 200px);
+    }
+}
+
+@media screen and (max-width: 550px) {
     :root {
         --horizontal-padding: 0;
     }
+}
 
-    nav{
-        justify-content: center;
-    }
-    
-    nav > a {
-        display: none;
-    }
-
-    section{
-        min-height: calc(100vh - 200px);
+@media screen and (max-width: 319px) {
+    h1 {
+        font-size: 1.5rem;
     }
 }
 
