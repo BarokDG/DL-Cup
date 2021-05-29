@@ -242,7 +242,7 @@ tr:nth-child(10) td:nth-child(1):before {
 
 /* Font awesome icon styles */
 .fas {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .fa-check-circle {
@@ -300,6 +300,10 @@ tr:nth-child(10) td:nth-child(1):before {
         --horizontal-padding: 5%;
     }
 
+    .fas {
+        font-size: 1.25rem;
+    }
+
     table {
         display: block;
     }
@@ -323,7 +327,7 @@ tr:nth-child(10) td:nth-child(1):before {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 535px) {
     :root {
         --horizontal-padding: 0;
     }
