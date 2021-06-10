@@ -304,6 +304,10 @@ tr:nth-child(10) td:nth-child(1):before {
         font-size: 1.25rem;
     }
 
+    .fa-minus {
+        font-size: 14px;
+    }
+
     table {
         display: block;
     }
