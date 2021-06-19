@@ -1,9 +1,9 @@
 package-lock.json
 
-drafttwo.html
-unused.html
+git rm --cached drafttwo.html
+git rm --cached unused.html
 
-node_modules\normalize.css\CHANGELOG.md
-node_modules\normalize.css\LICENSE.md 
-node_modules\normalize.css\package.json
-node_modules\normalize.css\README.md 
+node_modules/normalize.css/CHANGELOG.md
+node_modules/normalize.css/LICENSE.md
+node_modules/normalize.css/package.json
+node_modules/normalize.css/README.md
