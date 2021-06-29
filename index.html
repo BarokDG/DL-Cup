@@ -275,9 +275,7 @@
             $("#Soft span").html("Software");
           }
 
-          setTimeout(() => {
-            toggle_team_names();
-          }, 1000);
+          setTimeout(toggle_team_names, 1000);
         }
 
         function toggle_table_headers() {
@@ -295,9 +293,7 @@
             $("#Pts").html("Pts");
           }
 
-          setTimeout(() => {
-            toggle_table_headers();
-          }, 1000);
+          setTimeout(toggle_table_headers, 1000);
         }
 
         toggle_team_names();
